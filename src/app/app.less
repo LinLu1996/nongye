@@ -1,0 +1,82 @@
+@import "//at.alicdn.com/t/font_723649_j5kg5s76tl.css";//阿里账户弄的
+//@import  "//at.alicdn.com/t/font_953512_dtjb6l7o63.css";//自己账户弄的
+//@import "//alinw.alicdn.com/agro_brain/static_resources/leaflet.css";
+@import "https://unpkg.com/leaflet@1.2.0/dist/leaflet.css";
+body, html {
+  padding: 0;
+  margin: 0;
+  width:100%;
+  height:100%;
+  box-sizing: border-box;
+  &.user-select-none {
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    font-weight: normal;
+    &:active, &:focus{
+      text-decoration: none;
+    }
+  }
+  #App{
+    width:100%;
+    height:100%;
+  }
+  .content-body {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    //min-width: 1200px;
+  }
+  .content-wrapper {
+    display: flex;
+    width:100%;
+    min-height: 100%;
+    //min-width: 1200px;
+    position: relative;
+    background: #e6e7eb;
+    padding:20px;
+    padding-bottom: 30px;
+  }
+  .content-box {
+    //display: flex;
+    position: relative;
+    height:100%;
+    width:100%;
+    background: #e6e7eb;
+    overflow: auto;
+    overflow-x: hidden;
+    //padding:30px 60px;
+  }
+  .content-bottom{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+}
+body{
+  min-width: 1100px;
+}
+.clearfix:after {
+   content:"";
+   display: block;
+   clear:both;
+}
